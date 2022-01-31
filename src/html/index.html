@@ -1,0 +1,45 @@
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>Calculator</title>
+   <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../css/styles.css">
+   </style>
+</head>
+
+<body>
+
+   <div class="intro">
+
+      <h1>Calculator</h1>
+
+      <image src="https://image.flaticon.com/icons/png/512/346/346399.png" width="100px"></image>
+
+   </div>
+
+   <div class="form__group field">
+      <input type="input" class="form__field" placeholder="Valor 1" id='value1' required />
+      <label for="name" class="form__label">Value</label>
+   </div>
+   <div class="form__group field">
+      <input type="input" class="form__field" placeholder="Valor 2" id='value2' required />
+      <label for="name" class="form__label">Value</label>
+   </div>
+
+   <div class="button">
+      <span onclick="Calculator('soma')" class="butt" id="soma">+</span>
+      <span onclick="Calculator('sub')" class="butt" id="sub">-</span>
+      <span onclick="Calculator('div')" class="butt" id="div">/</span>
+      <span onclick="Calculator('multi')" class="butt" id="multi">*</span>
+   </div>
+
+   <ul id="ListResults">
+   </ul>
+
+   <script src="../js/scripts.js" type="text/javascript"></script>
+
+</body>
+
+</html>
